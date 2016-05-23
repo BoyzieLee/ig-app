@@ -5,12 +5,13 @@ import 'angular-ui-router';
 console.log(angular);
 
 // controllers
+import { AddController } from './controllers/add.controller';
+import { ListController } from './controllers/list.controller';
 
 // Config
-import config from './config';
-
+import {Config} from './config';
 
 angular
  .module('app', ['ui.router'])
- // .config(config)
+ .config(Config)
 ;
